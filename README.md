@@ -34,7 +34,6 @@ F10,F11でやっていることが少し違うので、この後の step ovre, i
 
 １つ処理が進み、c = a + b の処理が行われ、c の値が 7 になったのが確認できると思います。  
 
-***
 
 次に、break point の機能の１つの「**書き換え**」についての説明です。  
 break point を設置して コードを実行するまでは同じです。  
@@ -105,6 +104,8 @@ step out のメリットは、メインでは無い関数の動作チェック�
 
 ![](https://github.com/hiroto1130/image_preservation/blob/master/step%20out.gif?raw=true)  
   
+***
+
 ## 自動変数・ローカル変数ウィンドウについて 
 
 
@@ -130,12 +131,43 @@ step out のメリットは、メインでは無い関数の動作チェック�
 ## ウォッチ式について  
 ## データブレイクポイントについて  
 ## メモリウィンドウについて  
+
+***
 ## コールスタック(呼び出し履歴)について 
 
+まず、call stack の表示方法について。
+call stack はVSのメニューバーにあるデバッグのウィンドウの中に<span style="color: red; ">**デバッグ中のみ**</span>あります。  
+
+上記のやり方がめんどくさい方は「 **ctrl** **+** **alt** **+** **c**」でも出せます、安心してください。もちろん<span style="color: red; ">**デバッグ中のみ**</span>です。
+
+通常状態だと...
+![](https://github.com/hiroto1130/image_preservation/blob/master/call%20stack/call%20%20stack.png?raw=true)  
+もちろん、表示されてません。
+
+デバッグ中だと...
+![](https://github.com/hiroto1130/image_preservation/blob/master/call%20stack/call%20%20stack2.png?raw=true)  
+表示されてます!!! good!!!
 
 
+次に call stack の設定について。
+call stack のwindow内はこんな感じになっています。  
+![](https://github.com/hiroto1130/image_preservation/blob/master/call%20stack/call%20%20stack3.png?raw=true)  
+
+見方として、最初に main関数 があり、その次に multiplication 関数があります。
+基本的に呼ばれた順番に上に積みあがっていきます。  
+なので「stack」なんて単語が使われてたり...  
+
+ちなみに、この<span style="color: red; ">**🔴**</span>はbreak point の位置、<span style="color: yellow; ">**➡**</span> は現在実行している関数の場所です。  
+![](https://github.com/hiroto1130/image_preservation/blob/master/call%20stack/call%20%20stack5.png?raw=true)  
+
+最後に call stack のメリットについて。
+call stack  は簡単に言うと、その時点までにどのような経路をたどって、現在の関数に到達したのかを確認できる機能です。  
+上の図ではあまり実感がわかないような気もしますが、これが関数の中に使われている関数に使われている関数に使われ.....
+とこれが１０個以上あったらどうでしょう？  
+そんな時は call stack を使いましょう。  
+
+***
 ## イミディエイトウィンドウについて  
-
 
 まず、Immediate window の表示方法について。  
 Immediate window は、VSのメニューバーにあるデバッグのウィンドウの中にあります。  
