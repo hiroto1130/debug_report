@@ -32,7 +32,7 @@ F10,F11でやっていることが少し違うので、この後の step ovre, i
 
 ![](https://github.com/hiroto1130/image_preservation/blob/master/break_point3.png?raw=true)  
 
-mazu,つ処理が進み、c = a + b の処理が行われ、c の値が 7 になったのが確認できると思います。  
+１つ処理が進み、c = a + b の処理が行われ、c の値が 7 になったのが確認できると思います。  
 
 ***
 
@@ -52,11 +52,12 @@ break point を設置して コードを実行するまでは同じです。
 
 はい、ちゃんと値を変更させた通り、 c の値が 8 になっていますね。  
 
-以上でかbreak point の設定に関する簡易的な説明を終わります。  
+以上でbreak point の設定に関する簡易的な説明を終わります。  
 これが出来れば、デバッグをする際にとても便利です。  
 
 では本題の、break point について。  
 berak point は簡単に言えば「**実行されているコードを一時的に止めて値を書き換え、確認をすることが出来る機能**」です。  
+
 
 ***
 
@@ -129,5 +130,52 @@ step out のメリットは、メインでは無い関数の動作チェック�
 ## ウォッチ式について  
 ## データブレイクポイントについて  
 ## メモリウィンドウについて  
-## コールスタック(呼び出し履歴)について  
+## コールスタック(呼び出し履歴)について 
+
+
+
 ## イミディエイトウィンドウについて  
+
+
+まず、Immediate window の表示方法について。  
+Immediate window は、VSのメニューバーにあるデバッグのウィンドウの中にあります。  
+上記の出し方がめんどくさい方は [ **Ctrl** **+** **alt** **+** **I** ] で出せますのでこちらを推奨。  
+
+![](https://github.com/hiroto1130/image_preservation/blob/master/Immediate%20window.png?raw=true)  
+＊メニューバーのデバッグの....
+
+![](https://github.com/hiroto1130/image_preservation/blob/master/Immediate%20window1.png?raw=true)  
+＊ウィンドウの中にあるImmediate windowを選択したら...
+
+![](https://github.com/hiroto1130/image_preservation/blob/master/Immediate%20window2.png?raw=true)  
+＊Immediate window が出てきた!!!
+
+
+次に、Immediate window の使い方について。  
+ここでは、基本的な扱い方だけを紹介しています。  
+
+まず、調べたいところでbreak point を設置します。  
+![](https://github.com/hiroto1130/image_preservation/blob/master/Immediate%20window4.png?raw=true)  
+
+次に調べたい変数、関数名を「?」の後に記入します。  
+ここでは、変数 answre の値を調べる為、「?answre」と打っています。  
+![](https://github.com/hiroto1130/image_preservation/blob/master/Immediate%20window5.png?raw=true)  
+
+では、「Enter」を押して、値を見てみましょう。  
+![](https://github.com/hiroto1130/image_preservation/blob/master/Immediate%20window6.png?raw=true)  
+
+はい、しっかり、「addition」の計算結果、「12」の値が出てきましたね。  
+これは10進数で表示しているのでてきますが、基本は16進数で出てきます。  
+
+最後に、Immediate window のメリットについて。  
+Immediateという言葉は「即時の」という意味を持っています。  
+
+Immediate window は、知りたいこと・確認したいことを即時に知ることができるウィンドウです。  
+例を挙げるなら多くの変数を持っている関数でこの変数は度の値を持っているのかを確認するのによく使用されます。  
+
+
+
+
+
+
+
