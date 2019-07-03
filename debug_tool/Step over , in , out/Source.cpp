@@ -6,7 +6,7 @@ void addition(int a, int b)
 
 	c = a + b;
 
-	printf("%d", c);
+	printf("%d \n", c);
 
 }
 
@@ -16,7 +16,7 @@ void subtraction(int a, int b)
 
 	c = a + b;
 
-	printf("%d", c);
+	printf("%d \n", c);
 
 }
 
@@ -26,7 +26,7 @@ void multiplication(int a, int b)
 
 	c = a * b;
 
-	printf("%d", c);
+	printf("%d \n", c);
 
 }
 
