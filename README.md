@@ -124,17 +124,46 @@ data break point はVSのメニューバーにあるデバッグの中にある�
 しかし、data break point が設定できるのは<span style="color: red; ">**デバッグ中のみ**</span>です。  
 
 このように、デバッグ中じゃない限り選択できません。
-![]()
+![](https://github.com/hiroto1130/image_preservation/blob/master/data%20break%20point/data%20break%20point%20.png?raw=true)  
   
 デバッグ中だと選択できます。  
-![]()
+![](https://github.com/hiroto1130/image_preservation/blob/master/data%20break%20point/data%20break%20point%202.png?raw=true)  
 
 #### 書き変わった瞬間に止める設定方法
+書き変わった瞬間に止める設定方法について。  
+これは、data break point の設定をすれば大丈夫です。  
+data break point の window を開くと下のような画面が出てきます。   
+![](https://github.com/hiroto1130/image_preservation/blob/master/data%20break%20point/data%20break%20point%208.png?raw=true)    
+
+ここの記入欄に調べたい code のアドレスを入れる事で、設定できます。  
+![]()
 
 
 #### 条件を決めて止める設定方法
+条件を決めて止める設定方法について。  
+これは、break point を右クリックし、出てくる画面の中にある条件を選ぶことでできます。  
+上記のやり方がめんどくさい方は「**Alt** **+** **F9**」を押した後に「 **C** 」を押すことでも表示できます。  
 
 
+![](https://github.com/hiroto1130/image_preservation/blob/master/data%20break%20point/data%20break%20point%203.png?raw=true)  
+break point を右クリックして、条件を選ぶと...
+
+![](https://github.com/hiroto1130/image_preservation/blob/master/data%20break%20point/data%20break%20point%204.png?raw=true)  
+表示された!!
+
+そして、表示された画面の条件にチェックが付いていることを確認し、tureが選択されていることを確認し、白い空白のところに条件を記入します。  
+![](https://github.com/hiroto1130/image_preservation/blob/master/data%20break%20point/data%20break%20point%208.png?raw=true)  
+この画面になってたら正解です。  
+
+![](https://github.com/hiroto1130/image_preservation/blob/master/data%20break%20point/data%20break%20point%205.png?raw=true)  
+無事、設定できればこの画面になります。  
+
+
+最後に、<span style="color: red; ">**🔴**</span>に<span style="color: white; ">**＋**</span>が入ったマークになっていて、break point window に下記の画像のような表記がされていれば大丈夫です。  
+![](https://github.com/hiroto1130/image_preservation/blob/master/data%20break%20point/data%20break%20point%207.png?raw=true)   
+
+実際に動かしてみると、ちゃんと a の値が 0x00000003 で止まっていることが確認できれば大丈夫です。  
+![](https://github.com/hiroto1130/image_preservation/blob/master/data%20break%20point/data%20break%20point%206.png?raw=true)  
 
 
 最後に data break point のメリットについて。  
