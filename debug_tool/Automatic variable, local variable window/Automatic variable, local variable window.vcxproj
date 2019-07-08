@@ -23,6 +23,7 @@
     <ProjectGuid>{78FBCB9A-4FF7-4BAA-ACC5-87E740C60A0B}</ProjectGuid>
     <RootNamespace>Automaticvariablelocalvariablewindow</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>local variable window</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
