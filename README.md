@@ -26,13 +26,11 @@ F10,F11でやっていることが少し違うので、この後の step ovre, i
 
 ![](https://github.com/hiroto1130/image_preservation/blob/master/break%20point/break_point2.png?raw=true)  
 
-
 一つ処理が進んで a , b , c の値が代入されたのが確認できると思います。  
 
 ![](https://github.com/hiroto1130/image_preservation/blob/master/break%20point/break_point3.png?raw=true)   
 
 １つ処理が進み、c = a + b の処理が行われ、c の値が 7 になったのが確認できると思います。   
-
 
 次に、break point の機能の１つの「**書き換え**」についての説明です。   
 break point を設置して コードを実行するまでは同じです。  
@@ -55,7 +53,6 @@ break point を設置して コードを実行するまでは同じです。
 
 では本題の、break point について。  
 berak point は簡単に言えば「**実行されているコードを一時的に止めて値を書き換え、確認をすることが出来る機能**」です。  
-
 
 ***
 
@@ -82,7 +79,6 @@ step over は１行単位で実行されます、しかし関数があった場�
 main の中に複数の関数が入っているのにその関数には飛ばずに処理が行われていることがわかると思います。  
 step over を使うことのメリットを簡潔に言うとは、呼び出し先のプロシージャまで追跡する必要がなく、ブレークポイントの設定されたプロシージャ内だけを追跡したい場合に便利な点です。
 
-
 ![](https://github.com/hiroto1130/image_preservation/blob/master/step%20ovre%20in%20out/step%20over%20,%20in%20,%20out%201%20.gif?raw=true)  
 
 #### step in について  
@@ -106,7 +102,29 @@ step out のメリットは、メインでは無い関数の動作チェック�
 ***
 ## 自動変数・ローカル変数ウィンドウについて  
 
+### 自動変数について
 
+### Local variable windowについて 
+まず、Local variable window の表示方法について。  
+Local variable window はVSのメニューバーにあるデバッグのウィンドウの中に<span style="color: red; ">**デバッグ中のみ**</span>あります。  
+
+上記のやり方がめんどくさい方は「 **ctrl** **+** **alt** **+** **V** **,** **L**」でも出せます、安心してください。もちろん<span style="color: red; ">**デバッグ中のみ**</span>です。
+
+デバッグ中以外だと...
+![](https://github.com/hiroto1130/image_preservation/blob/master/local%20variable%20window/local%20variable%20window%201.png?raw=true)  
+
+デバッグ中だと...
+![](https://github.com/hiroto1130/image_preservation/blob/master/local%20variable%20window/local%20variable%20window%202.png?raw=true)   
+
+次に見方について。  
+表示すると下のような画面が出てきます。
+![](https://github.com/hiroto1130/image_preservation/blob/master/local%20variable%20window/local%20variable%20window%203.png?raw=true)
+
+F10を押して処理をすすめ、すべての値を変数を代入すれば、下の画像の様に値がしっかり代入されていることがわかるともいます。
+![](https://github.com/hiroto1130/image_preservation/blob/master/local%20variable%20window/local%20variable%20window%204.png?raw=true)  
+
+最後に Local variable window のメリットについて。  
+この機能のメリットは見た通りで、すべての変数に何が入っているのか、を確認することが出来ることです。 
 
 ***
 ## ウォッチ式について  
