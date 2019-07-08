@@ -13,41 +13,40 @@
 
 の二種類があります。  
 
-＊break point 設置例
-![](https://github.com/hiroto1130/image_preservation/blob/master/break_point4.png?raw=true)
+＊break point 設置例   
 
-では、実際にビルドしてみます。   
+![](https://github.com/hiroto1130/image_preservation/blob/master/break%20point/break_point.png?raw=true)   
 
-![](https://github.com/hiroto1130/image_preservation/blob/master/break_point.png?raw=true)
 
-はい、しっかりと止まりました。  
+では、実際にビルドしてみます。     
+
+はい、しっかりと止まりました。   
 ここから、 F10,F11 を押して行くことでコードの処理を追うことができます。 
-F10,F11でやっていることが少し違うので、この後の step ovre, in ,out で詳しく説明します。  
+F10,F11でやっていることが少し違うので、この後の step ovre, in ,out で詳しく説明します。   
 
-
-![](https://github.com/hiroto1130/image_preservation/blob/master/break_point2.png?raw=true)
+![](https://github.com/hiroto1130/image_preservation/blob/master/break%20point/break_point2.png?raw=true)  
 
 
 一つ処理が進んで a , b , c の値が代入されたのが確認できると思います。  
 
-![](https://github.com/hiroto1130/image_preservation/blob/master/break_point3.png?raw=true)  
+![](https://github.com/hiroto1130/image_preservation/blob/master/break%20point/break_point3.png?raw=true)   
 
-１つ処理が進み、c = a + b の処理が行われ、c の値が 7 になったのが確認できると思います。  
+１つ処理が進み、c = a + b の処理が行われ、c の値が 7 になったのが確認できると思います。   
 
 
-次に、break point の機能の１つの「**書き換え**」についての説明です。  
+次に、break point の機能の１つの「**書き換え**」についての説明です。   
 break point を設置して コードを実行するまでは同じです。  
 では、実際に書き換えてみます。  
 
-![](https://github.com/hiroto1130/image_preservation/blob/master/break_point2.png?raw=true)  
+![](https://github.com/hiroto1130/image_preservation/blob/master/break%20point/break_point2.png?raw=true)  
 
 まず、c = a + b の処理が行われている所までコードを進めます。  
 
-![](https://github.com/hiroto1130/image_preservation/blob/master/break_point5.png?raw=true)  
+![](https://github.com/hiroto1130/image_preservation/blob/master/break%20point/break_point5.png?raw=true)  
 
 ここでは、a の値を 2 から 5 に変更してみます。  
 
-![](https://github.com/hiroto1130/image_preservation/blob/master/break_point6.png?raw=true)  
+![](https://github.com/hiroto1130/image_preservation/blob/master/break%20point/break_point6.png?raw=true)  
 
 はい、ちゃんと値を変更させた通り、 c の値が 8 になっていますね。  
 
