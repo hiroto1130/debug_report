@@ -150,6 +150,33 @@ F10を押して処理をすすめ、すべての値を変数を代入すれば�
 
 ***
 ## ウォッチ式について  
+まず、ウォッチ式の表示方法について。  
+ウォッチ式はVSのメニューバーにあるデバッグのウィンドウの中に<span style="color: red; ">**デバッグ中のみ**</span>あります。  
+
+上記のやり方がめんどくさい方は「 **ctrl** **+** **alt** **+** **W** **,** **1 or 2 or 3 or 4**」でも出せます、安心してください。もちろん<span style="color: red; ">**デバッグ中のみ**</span>です。
+
+デバッグ中には表示されてます。  
+
+![](https://github.com/hiroto1130/image_preservation/blob/master/watch/watch%201.png?raw=true)  
+
+次にウォッチ式の設定方法について。  
+ウォッチ式は自分が選択した変数の値だけを見ることが出来る機能です。  
+では、実際にウォッチ式を開くと以下の画像のような画面が表示されます。  
+
+![](https://github.com/hiroto1130/image_preservation/blob/master/watch/watch%202.png?raw=true)  
+
+今回は「HP」と「answre」の値を選択して表示させます。  
+
+![](https://github.com/hiroto1130/image_preservation/blob/master/watch/watch%203.png?raw=true)  
+
+「HP」「answre」の値が代入されたところまでtpばしてみます。  
+
+![](https://github.com/hiroto1130/image_preservation/blob/master/watch/watch%205.png?raw=true)  
+
+はい、しっかりと「HP」「answre」の変数の値のみ表示されていますね。  
+
+最後にウォッチ式のメリットについて。  
+ウォッチ式は自分の選択した変数のみを見ることが出来る為、変数を追いかける機能の中では一番使い勝手が良い機能だと思います。  
 
 
 ***
