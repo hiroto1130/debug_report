@@ -180,8 +180,38 @@ break point を右クリックして、条件を選ぶと...
 ***
 
 ## メモリウィンドウについて  
+まず、memory window の表示方法について。  
+memory window はVSのメニューバーにあるデバッグのウィンドウの中に<span style="color: red; ">**デバッグ中のみ**</span>あります。 
+これは、いつもの見たくショートカットキーは無いので諦めてください。  
 
+デバッグ中に開いたら、下の方にあります。  
 
+![](https://github.com/hiroto1130/image_preservation/blob/master/memory%20window/memory%20window%202.png?raw=true)  
+
+こんな感じで...
+
+![](https://github.com/hiroto11です。image_preservation/blob/master/memory%20window/memory%20window%203.png?raw=true)  
+
+次に設定方法(使用方法)について。  
+実際に memory window を開いて見ると
+
+![](https://github.com/hiroto1130/image_preservation/blob/master/memory%20window/memory%20window%204.png?raw=true)
+
+このような画面が出てきます。  
+今回は array の中身が知りたいので &array と打ってアドレスを指定します。  
+
+![](https://github.com/hiroto1130/image_preservation/blob/master/memory%20window/memory%20window%205.png?raw=true)
+
+ENTER を押すとこんな感じ...  
+
+![](https://github.com/hiroto1130/image_preservation/blob/master/memory%20window/memory%20window%206.png?raw=true)  
+
+選択している所にちゃんと、 array の配列の数が入っているのがわかると思います。  
+
+![](https://github.com/hiroto1130/image_preservation/blob/master/memory%20window/memory%20window%207.png?raw=true)  
+
+最後に memory window のメリットについて。  
+memory window のメリットは、割り当てられていないメモリ内データ、コード、およびガベージのランダムなビットを含む、メモリ領域ですべてのものが表示されるところです。
 
 ***
 ## コールスタック(呼び出し履歴)について 
@@ -208,10 +238,10 @@ call stack のwindow内はこんな感じになっています。
 基本的に呼ばれた順番に上に積みあがっていきます。  
 なので「stack」なんて単語が使われてたり...  
 
-ちなみに、この<span style="color: red; ">**🔴**</span>はbreak point の位置、<span style="color: yellow; ">**➡**</span> は現在実行している関数の場所です。  
+ちなみに、この<span style="color: red; ">🔴</span>はbreak point の位置、<span style="color: yellow; ">**➡**</span> は現在実行している関数の場所です。  
 ![](https://github.com/hiroto1130/image_preservation/blob/master/call%20stack/call%20%20stack5.png?raw=true)  
 
-最後に call stack のメリットについて。
+最後に call stack のメリットについて。 
 call stack  は簡単に言うと、その時点までにどのような経路をたどって、現在の関数に到達したのかを確認できる機能です。  
 上の図ではあまり実感がわかないような気もしますが、これが関数の中に使われている関数に使われている関数に使われ.....
 とこれが１０個以上あったらどうでしょう？  
