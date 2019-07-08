@@ -105,15 +105,15 @@ step out のメリットは、メインでは無い関数の動作チェック�
 ![](https://github.com/hiroto1130/image_preservation/blob/master/step%20out.gif?raw=true)  
   
 ***
+## 自動変数・ローカル変数ウィンドウについて  
 
-## 自動変数・ローカル変数ウィンドウについて 
+
 
 ***
-
 ## ウォッチ式について  
 
-***
 
+***
 ## データブレークポイントについて  
 まず、data break point と break point の違いについて。  
 一時停止する点を設定することには違いがありませんが、data brack point は break point が処理を確定で止めるのに対し、条件を決めて
@@ -132,18 +132,24 @@ data break point はVSのメニューバーにあるデバッグの中にある�
 #### 書き変わった瞬間に止める設定方法
 書き変わった瞬間に止める設定方法について。  
 これは、data break point の設定をすれば大丈夫です。  
-data break point の window を開くと下のような画面が出てきます。   
+data break point の window を開くと下のような画面が出てきます。  
+ここの記入欄に調べたい code のアドレスを入れる事で、設定できます。     
+今回は array[1]　の値が書き換えられた時に止まるように設定します。  
+
 ![](https://github.com/hiroto1130/image_preservation/blob/master/data%20break%20point/data%20break%20point%208.png?raw=true)    
 
-ここの記入欄に調べたい code のアドレスを入れる事で、設定できます。  
-![]()
+設定できると、下のような画面になります。  
+![](https://github.com/hiroto1130/image_preservation/blob/master/data%20break%20point/data%20break%20point%20gif%201.png?raw=true)
+
+実際に動かしたものが下のGIF画像です。  
+
+![](https://github.com/hiroto1130/image_preservation/blob/master/data%20break%20point/data%20break%20point%20.gif?raw=true)
 
 
 #### 条件を決めて止める設定方法
 条件を決めて止める設定方法について。  
 これは、break point を右クリックし、出てくる画面の中にある条件を選ぶことでできます。  
 上記のやり方がめんどくさい方は「**Alt** **+** **F9**」を押した後に「 **C** 」を押すことでも表示できます。  
-
 
 ![](https://github.com/hiroto1130/image_preservation/blob/master/data%20break%20point/data%20break%20point%203.png?raw=true)  
 break point を右クリックして、条件を選ぶと...
@@ -175,6 +181,8 @@ break point を右クリックして、条件を選ぶと...
 ***
 
 ## メモリウィンドウについて  
+
+
 
 ***
 ## コールスタック(呼び出し履歴)について 
