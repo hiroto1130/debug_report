@@ -100,9 +100,31 @@ step out のメリットは、メインでは無い関数の動作チェック�
 ![](https://github.com/hiroto1130/image_preservation/blob/master/step%20ovre%20in%20out/step%20out.gif?raw=true)  
   
 ***
-## 自動変数・ローカル変数ウィンドウについて  
+## 	automatic variable・Local variable windowについて  
 
-### 自動変数について
+### automatic variable  について
+まず、automatic variable の表示方法について。  
+automatic variable はVSのメニューバーにあるデバッグのウィンドウの中に<span style="color: red; ">**デバッグ中のみ**</span>あります。  
+
+上記のやり方がめんどくさい方は「 **ctrl** **+** **alt** **+** **V** **,** **A**」でも出せます、安心してください。もちろん<span style="color: red; ">**デバッグ中のみ**</span>です。
+
+こんな感じですね。  
+![](https://github.com/hiroto1130/image_preservation/blob/master/automatic%20variable/automatic%20variable%201.png?raw=true)
+
+次に automatic variable の機能について。  
+この機能は Local variable window とよく似ていますが、少し違います。  
+具体的には、Local variable window はそのコードに書かれてある変数全てを表示しますが、automatic variable は選択した行の変数とそのひとつ前で使われている変数しか表示しません。  
+と、言葉で書いてもわかりずらいので、以下の画像を見るとわかりやすいと思います。  
+
+Local variable window ではすべての変数が表示されていますが...  
+![](https://github.com/hiroto1130/image_preservation/blob/master/automatic%20variable/automatic%20variable%203.png?raw=true)  
+
+automatic variable は付近の変数しか表示していません。  
+![](https://github.com/hiroto1130/image_preservation/blob/master/automatic%20variable/automatic%20variable%202.png?raw=true)  
+
+最後に automatic variable のメリットについて。  
+この、automatic variable の機能のメリットは Local variable window と使い分けができるほか、必要以上の変数を見ることがないため、分かりやすい点です。  
+
 
 ### Local variable windowについて 
 まず、Local variable window の表示方法について。  
