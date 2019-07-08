@@ -83,7 +83,7 @@ main の中に複数の関数が入っているのにその関数には飛ばず
 step over を使うことのメリットを簡潔に言うとは、呼び出し先のプロシージャまで追跡する必要がなく、ブレークポイントの設定されたプロシージャ内だけを追跡したい場合に便利な点です。
 
 
-![](https://github.com/hiroto1130/image_preservation/blob/master/step%20over%20,%20in%20,%20out%201%20.gif?raw=true)  
+![](https://github.com/hiroto1130/image_preservation/blob/master/step%20ovre%20in%20out/step%20over%20,%20in%20,%20out%201%20.gif?raw=true)  
 
 #### step in について  
 
@@ -92,7 +92,7 @@ step in は step over と同様に１行単位で実行されます。
 その為、この step in は最もステップ単位が小さいデバッグ方法になります。  
 step in のメリットを簡潔に言うと、呼び出し先のプロシージャまで追跡したい場合に便利な点です。  
 
-![](https://github.com/hiroto1130/image_preservation/blob/master/step%20in.gif?raw=true)  
+![](https://github.com/hiroto1130/image_preservation/blob/master/step%20ovre%20in%20out/step%20in.gif?raw=true)  
 
 #### step out について
 
@@ -101,7 +101,7 @@ step out の機能は、今実行している関数の外（呼び出し元）�
 と、文面で見てもわかりずらいと思うので、GIFを見ていただければわかりやすいと思います。  
 step out のメリットは、メインでは無い関数の動作チェックが終わった後に呼び出し元に戻り、確認したい時に役に立ちます。  
 
-![](https://github.com/hiroto1130/image_preservation/blob/master/step%20out.gif?raw=true)  
+![](https://github.com/hiroto1130/image_preservation/blob/master/step%20ovre%20in%20out/step%20out.gif?raw=true)  
   
 ***
 ## 自動変数・ローカル変数ウィンドウについて  
@@ -224,13 +224,13 @@ call stack  は簡単に言うと、その時点までにどのような経路�
 Immediate window は、VSのメニューバーにあるデバッグのウィンドウの中にあります。  
 上記の出し方がめんどくさい方は [ **Ctrl** **+** **alt** **+** **I** ] で出せますのでこちらを推奨。  
 
-![](https://github.com/hiroto1130/image_preservation/blob/master/Immediate%20window.png?raw=true)  
+![](https://github.com/hiroto1130/image_preservation/blob/master/Immediate%20window/Immediate%20window.png?raw=true)  
 ＊メニューバーのデバッグの....
 
-![](https://github.com/hiroto1130/image_preservation/blob/master/Immediate%20window1.png?raw=true)  
+![](https://github.com/hiroto1130/image_preservation/blob/master/Immediate%20window/Immediate%20window1.png?raw=true)  
 ＊ウィンドウの中にあるImmediate windowを選択したら...
 
-![](https://github.com/hiroto1130/image_preservation/blob/master/Immediate%20window2.png?raw=true)  
+![](https://github.com/hiroto1130/image_preservation/blob/master/Immediate%20window/Immediate%20window2.png?raw=true)  
 ＊Immediate window が出てきた!!!
 
 
@@ -238,14 +238,14 @@ Immediate window は、VSのメニューバーにあるデバッグのウィン�
 ここでは、基本的な扱い方だけを紹介しています。  
 
 まず、調べたいところでbreak point を設置します。  
-![](https://github.com/hiroto1130/image_preservation/blob/master/Immediate%20window4.png?raw=true)  
+![](https://github.com/hiroto1130/image_preservation/blob/master/Immediate%20window/Immediate%20window3.png?raw=true)  
 
 次に調べたい変数、関数名を「?」の後に記入します。  
 ここでは、変数 answre の値を調べる為、「?answre」と打っています。  
-![](https://github.com/hiroto1130/image_preservation/blob/master/Immediate%20window5.png?raw=true)  
+![](https://github.com/hiroto1130/image_preservation/blob/master/Immediate%20window/Immediate%20window6.png?raw=true)  
 
 では、「Enter」を押して、値を見てみましょう。  
-![](https://github.com/hiroto1130/image_preservation/blob/master/Immediate%20window6.png?raw=true)  
+![](https://github.com/hiroto1130/image_preservation/blob/master/Immediate%20window/Immediate%20window7.png?raw=true)  
 
 はい、しっかり、「addition」の計算結果、「12」の値が出てきましたね。  
 これは10進数で表示しているのでてきますが、基本は16進数で出てきます。  
