@@ -13,7 +13,7 @@
 
 の二種類があります。  
 
-＊break point 設置例   
+break point 設置例   
 
 ![](https://github.com/hiroto1130/image_preservation/blob/master/break%20point/break_point.png?raw=true)   
 
