@@ -322,13 +322,13 @@ Immediate window は、VSのメニューバーにあるデバッグのウィン�
 上記の出し方がめんどくさい方は [ **Ctrl** **+** **alt** **+** **I** ] で出せますのでこちらを推奨。  
 
 ![](https://github.com/hiroto1130/image_preservation/blob/master/Immediate%20window/Immediate%20window.png?raw=true)  
-＊メニューバーのデバッグの....
+メニューバーのデバッグの....
 
 ![](https://github.com/hiroto1130/image_preservation/blob/master/Immediate%20window/Immediate%20window1.png?raw=true)  
-＊ウィンドウの中にあるImmediate windowを選択したら...
+ウィンドウの中にあるImmediate windowを選択したら...
 
 ![](https://github.com/hiroto1130/image_preservation/blob/master/Immediate%20window/Immediate%20window2.png?raw=true)  
-＊Immediate window が出てきた!!!
+Immediate window が出てきた!!!
 
 
 次に、Immediate window の使い方について。  
