@@ -94,7 +94,7 @@ step in のメリットを簡潔に言うと、呼び出し先のプロシージ
 
 step out は上の二つよりも使用頻度は落ちますが主にゲーム制作に入ってからは重宝すると思います。  
 step out の機能は、今実行している関数の外（呼び出し元）に出るまでプログラムを進めるステップ実行方法です、簡単に言うと「**別関数からメインの関数に戻る**」機能です。  
-と、文面で見てもわかりずらいと思うので、GIFを見ていただければわかりやすいと思います。  
+と、文面で見てもわかりづらいと思うので、GIFを見ていただければわかりやすいと思います。  
 step out のメリットは、メインでは無い関数の動作チェックが終わった後に呼び出し元に戻り、確認したい時に役に立ちます。  
 
 ![](https://github.com/hiroto1130/image_preservation/blob/master/step%20ovre%20in%20out/step%20out.gif?raw=true)  
@@ -114,7 +114,7 @@ automatic variable はVSのメニューバーにあるデバッグのウィン�
 次に automatic variable の機能について。  
 この機能は Local variable window とよく似ていますが、少し違います。  
 具体的には、Local variable window はそのコードに書かれてある変数全てを表示しますが、automatic variable は選択した行の変数とそのひとつ前で使われている変数しか表示しません。  
-と、言葉で書いてもわかりずらいので、以下の画像を見るとわかりやすいと思います。  
+と、言葉で書いてもわかりづらいので、以下の画像を見るとわかりやすいと思います。  
 
 Local variable window ではすべての変数が表示されていますが...  
 ![](https://github.com/hiroto1130/image_preservation/blob/master/automatic%20variable/automatic%20variable%203.png?raw=true)  
